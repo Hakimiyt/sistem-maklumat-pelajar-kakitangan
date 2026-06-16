@@ -5,7 +5,6 @@ document.getElementById("registerForm")
 
         const nama = document.getElementById("nama").value;
         const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
 
         try {
 
@@ -17,8 +16,7 @@ document.getElementById("registerForm")
                     },
                     body: JSON.stringify({
                         nama,
-                        email,
-                        password
+                        email
                     })
                 }
             );
