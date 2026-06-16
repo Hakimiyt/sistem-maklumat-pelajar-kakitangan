@@ -12,13 +12,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      # Langkah ini untuk kita semak struktur folder sebenar
+      - name: Lihat struktur folder
+        run: ls -la
           
-      # Langkah install di dalam sub-folder
+      # Tukar laluan kepada "." (root/luar sekali) untuk cuba jika ia sebenarnya di luar
       - name: Install dependencies
         run: npm install
-        working-directory: ./sistem-maklumat-pelajar-kakitangan
+        working-directory: .
         
-      # Langkah run test di dalam sub-folder
+      # Tukar laluan kepada "." juga
       - name: Run Vitest
         run: npm test
-        working-directory: ./sistem-maklumat-pelajar-kakitangan
+        working-directory: .
