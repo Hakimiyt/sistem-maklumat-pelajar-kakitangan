@@ -1,12 +1,15 @@
 {
-  "name": "sistem-maklumat-pelajar-kakitangan",
-  "version": "1.0.0",
-  "description": "Sistem Maklumat Pelajar dan Kakitangan",
-  "main": "index.js",
-  "scripts": {
-     "test": "vitest run"
-   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "sistem-maklumat-pelajar-kakitangan",
+    "version": "1.0.0",
+    "description": "Sistem Maklumat Pelajar dan Kakitangan",
+    "main": "index.js",
+    "scripts": {
+        "test": "vitest run"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "vitest": "^1.6.0"
+    }
 }
